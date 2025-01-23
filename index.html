@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cartago Servers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 flex items-center justify-center bg-gray-900 z-50">
+        <div class="text-center">
+            <img src="logo.png" alt="Cartago Logo" class="w-24 h-24 mx-auto animate-pulse">
+            <div class="mt-4">
+                <div class="w-32 h-2 bg-gray-700 rounded-full mx-auto overflow-hidden">
+                    <div class="h-full bg-red-600 animate-loading-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Navbar -->
+        <nav class="sticky top-0 bg-gray-800 shadow-md z-40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex-shrink-0">
+                        <img src="logo.png" alt="Cartago Logo" class="w-10 h-10">
+                    </div>
+                    <div>
+                        <ul class="flex space-x-4">
+                            <li><a href="#" class="text-white hover:text-red-500">Inicio</a></li>
+                            <li><a href="#" class="text-white hover:text-red-500">Tienda</a></li>
+                            <li><a href="#" class="text-white hover:text-red-500">Servidores</a></li>
+                            <li><a href="#" class="text-white hover:text-red-500">Discord</a></li>
+                            <li><a href="#" class="text-white hover:text-red-500">Ranking</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative flex items-center justify-center h-screen bg-gray-900">
+            <div class="text-center z-10">
+                <h1 class="text-4xl font-bold mb-4">Bienvenido a Cartago Servers</h1>
+                <p class="text-lg mb-6">Explora nuestros servidores y sé parte de nuestra comunidad</p>
+                <a href="#" class="px-6 py-3 bg-red-600 text-white rounded-lg shadow hover:bg-red-500">Cartago Shop</a>
+            </div>
+            <video autoplay loop muted class="video-background">
+                <source src="background-video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Servers Carousel Section -->
+        <section class="py-12 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servidores</h2>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Server Items -->
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_ragnarok.jpg" alt="Ragnarok" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Ragnarok</h3>
+                            <p class="text-gray-400">Un mapa épico con paisajes diversos y desafiantes.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_the_island.jpg" alt="The Island" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">The Island</h3>
+                            <p class="text-gray-400">El mapa clásico lleno de aventuras y secretos.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_scorched_earth.jpg" alt="Scorched Earth" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Scorched Earth</h3>
+                            <p class="text-gray-400">Explora un desierto lleno de desafíos y criaturas únicas.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_aberration.jpg" alt="Aberration" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Aberration</h3>
+                            <p class="text-gray-400">Un bioma único con desafíos subterráneos.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_extinction.jpg" alt="Extinction" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Extinction</h3>
+                            <p class="text-gray-400">Lucha contra titanes en este mapa postapocalíptico.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_valguero.jpg" alt="Valguero" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Valguero</h3>
+                            <p class="text-gray-400">Explora vastos paisajes y misterios ocultos.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_crystal_isles.jpg" alt="Crystal Isles" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Crystal Isles</h3>
+                            <p class="text-gray-400">Un mapa cristalino lleno de maravillas naturales.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_genesis1.jpg" alt="Genesis Part 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Genesis Part 1</h3>
+                            <p class="text-gray-400">Aventuras por biomas únicos y desafiantes.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_genesis2.jpg" alt="Genesis Part 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Genesis Part 2</h3>
+                            <p class="text-gray-400">Cierra la saga con un mapa diverso y emocionante.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_lost_island.jpg" alt="Lost Island" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Lost Island</h3>
+                            <p class="text-gray-400">Explora un mapa masivo lleno de aventuras y desafíos.</p>
+                        </div>
+                        <div class="carousel-item bg-gray-900 p-6 rounded-lg shadow-lg">
+                            <img src="server_fjordur.jpg" alt="Fjordur" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Fjordur</h3>
+                            <p class="text-gray-400">Un mundo inspirado en la mitología nórdica.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="#" class="px-6 py-3 bg-red-600 text-white rounded-lg shadow hover:bg-red-500">Ver todos los servidores</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Section -->
+        <section class="py-12 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8">Únete a nuestra Comunidad</h2>
+                <div class="text-center mb-8">
+                    <a href="https://discord.com/invite/your-server" target="_blank" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500">Unirse a Discord</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <iframe src="https://discord.com/widget?id=your-server-id&theme=dark" width="100%" height="300" allowtransparency="true" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-gray-400">© 2023 Cartago Servers. Todos los derechos reservados.</p>
+                <p><a href="#" class="text-gray-400 hover:text-red-500">Política de Privacidad</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
